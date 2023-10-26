@@ -1,0 +1,51 @@
+/* .container_head {
+      margin-top: 25px;
+      margin-left: 330px;
+      margin-right: 50px;
+      margin-bottom: 25px;
+      max-width: 600px;
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    } */
+
+    .container_head {
+      margin: 25px auto;
+      max-width: 600px;
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      text-align: center; /* Center the text content inside the div */
+    }
+
+
+
+
+
+    .container_head {
+    margin-top: 25px;
+    margin-left: 25px; /* Adjusted margin-left to align the image to the left */
+    margin-right: 50px;
+    margin-bottom: 25px;
+    max-width: 600px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .side_img {
+    height: 200px;
+    width: 200px;
+    margin-top: 10px;
+    position: relative;
+    left: 0; /* Adjusted left position to 0 to align the image to the left */
+  }
+
+
+
+  .container_head img {
+    float: left; /* Add this line to make the image left-aligned */
+  }

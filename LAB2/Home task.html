@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        h1 {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            color: #333;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            margin-left: 20px;
+            color: #333;
+        }
+
+        img {
+            border: 2px solid #333;
+            border-radius: 5px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 20px auto;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+            
+        }
+
+        th {
+            background-color: #333;
+            color: #fff;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        div {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+
+        a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        body {
+            background-image: url('grad.jpg');
+            background-size: cover;
+        }
+
+        #introduction {
+            background-image: url('introduction_background.jpg');
+            background-size: cover;
+            color: #fff;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        #courses {
+            background-image: url('courses_background.jpg');
+            background-size: cover;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        #interests {
+            background-image: url('interests_background.jpg');
+            background-size: cover;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <h1>STUDENT PORTFOLIO</h1>
+    
+    <div id="introduction">
+        <h2> ABOUT ME </h2>
+            <img src="saad.jpg" alt="Student Image" width="150">
+            <p> I am Saad Ather Ali, the sole child in my family, currently pursuing a software engineering degree.
+        This journey has been both thrilling and challenging, exposing me to a rapidly evolving world of
+        technology. I've honed my skills in programming, software development, and embraced the dynamic
+        landscape of the tech industry. My family's unwavering support has been a cornerstone of my journey.
+        As I approach degree completion, I'm excited to apply my knowledge to make a meaningful impact. I'm
+        deeply committed to staying adaptable and continuously learning, ready to embrace emerging
+        technologies and contribute to the ever-transforming software engineering field.
+        </p>
+    </div>
+
+    <div id="courses">
+        <h2>COURSE TAKEN</h2>
+        <table border="1">
+            <tr>
+                <th>Course Id</th>
+                <th>Course Name</th>
+                <th>Credit Hours</th>
+                <th>Year Taken</th>
+            </tr>
+            <tr>
+                <td>101</td>
+                <td>Introduction to Computer Science</td>
+                <td>3</td>
+                <td>2022</td>
+            </tr>
+            <tr>
+                <td>201</td>
+                <td>Data Structures and Algorithms</td>
+                <td>4</td>
+                <td>2023</td>
+            </tr>
+            <tr>
+                <td>301</td>
+                <td>Web Development</td>
+                <td>3</td>
+                <td>2022</td>
+            </tr>
+            <tr>
+                <td>401</td>
+                <td>Database Management</td>
+                <td>3</td>
+                <td>2023</td>
+            </tr>
+        </table>
+
+        <div>
+            <button onclick="searchAndHighlight()">Search and Highlight Course</button>
+            <button onclick="addNewCourse()">Add New Course</button>
+            <button onclick="updateCourse()">Update Course</button>
+            <button onclick="removeCourse()">Remove Course</button>
+        </div>
+    </div>
+
+    <div id="interests">
+        <h2>Interests</h2>
+        <p >
+            Check out my university's homepage: <a href="https://www.uit.edu">UIT University</a>
+        </p>
+    </div>
+
+    <script>
+        function searchAndHighlight() {
+            var courseToSearch = prompt("Enter Course Name to Search");
+            if (courseToSearch) {
+                var table = document.querySelector("#courses table");
+                var rows = table.querySelectorAll("tr");
+    
+                for (var i = 1; i < rows.length; i++) {
+                    var courseName = rows[i].querySelector("td:nth-child(2)").textContent;
+                    if (courseName.toLowerCase() === courseToSearch.toLowerCase()) {
+                        rows[i].style.backgroundColor = "#FFFF99"; 
+                    } else {
+                        rows[i].style.backgroundColor = ""; 
+                    }
+                }
+            }
+        }
+    
+        function addNewCourse() {
+            var courseId = prompt("Enter Course ID");
+            var courseName = prompt("Enter Course Name");
+            var creditHours = prompt("Enter Credit Hours");
+            var yearTaken = prompt("Enter Year Taken");
+    
+            var table = document.querySelector("#courses table");
+            var newRow = table.insertRow(table.rows.length);
+            var cell1 = newRow.insertCell(0);
+            var cell2 = newRow.insertCell(1);
+            var cell3 = newRow.insertCell(2);
+            var cell4 = newRow.insertCell(3);
+    
+            cell1.innerHTML = courseId;
+            cell2.innerHTML = courseName;
+            cell3.innerHTML = creditHours;
+            cell4.innerHTML = yearTaken;
+        }
+    
+        function updateCourse() {
+            var courseName = prompt("Enter Course Name to Update");
+            if (courseName) {
+                var table = document.querySelector("#courses table");
+                var rows = table.querySelectorAll("tr");
+    
+                for (var i = 1; i < rows.length; i++) {
+                    var courseNameCell = rows[i].querySelector("td:nth-child(2)");
+                    if (courseNameCell.textContent.toLowerCase() === courseName.toLowerCase()) {
+                        var newCourseName = prompt("Enter New Course Name");
+                        if (newCourseName) {
+                            courseNameCell.textContent = newCourseName;
+                        }
+                        return; 
+                    }
+                }
+            }
+        }
+    
+        function removeCourse() {
+            var courseName = prompt("Enter Course Name to Remove");
+            if (courseName) {
+                var table = document.querySelector("#courses table");
+                var rows = table.querySelectorAll("tr");
+    
+                for (var i = 1; i < rows.length; i++) {
+                    var courseNameCell = rows[i].querySelector("td:nth-child(2)");
+                    if (courseNameCell.textContent.toLowerCase() === courseName.toLowerCase()) {
+                        table.deleteRow(i);
+                        return; 
+                    }
+                }
+            }
+        }
+    </script>
+    
+</body>
+</html>

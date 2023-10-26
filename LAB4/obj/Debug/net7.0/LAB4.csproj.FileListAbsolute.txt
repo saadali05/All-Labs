@@ -1,0 +1,14 @@
+C:\Users\Saad\Desktop\codin\WE_LABS\All Labs\LAB4\bin\Debug\net7.0\LAB4.exe
+C:\Users\Saad\Desktop\codin\WE_LABS\All Labs\LAB4\bin\Debug\net7.0\LAB4.deps.json
+C:\Users\Saad\Desktop\codin\WE_LABS\All Labs\LAB4\bin\Debug\net7.0\LAB4.runtimeconfig.json
+C:\Users\Saad\Desktop\codin\WE_LABS\All Labs\LAB4\bin\Debug\net7.0\LAB4.dll
+C:\Users\Saad\Desktop\codin\WE_LABS\All Labs\LAB4\bin\Debug\net7.0\LAB4.pdb
+C:\Users\Saad\Desktop\codin\WE_LABS\All Labs\LAB4\obj\Debug\net7.0\LAB4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Saad\Desktop\codin\WE_LABS\All Labs\LAB4\obj\Debug\net7.0\LAB4.AssemblyInfoInputs.cache
+C:\Users\Saad\Desktop\codin\WE_LABS\All Labs\LAB4\obj\Debug\net7.0\LAB4.AssemblyInfo.cs
+C:\Users\Saad\Desktop\codin\WE_LABS\All Labs\LAB4\obj\Debug\net7.0\LAB4.csproj.CoreCompileInputs.cache
+C:\Users\Saad\Desktop\codin\WE_LABS\All Labs\LAB4\obj\Debug\net7.0\LAB4.dll
+C:\Users\Saad\Desktop\codin\WE_LABS\All Labs\LAB4\obj\Debug\net7.0\refint\LAB4.dll
+C:\Users\Saad\Desktop\codin\WE_LABS\All Labs\LAB4\obj\Debug\net7.0\LAB4.pdb
+C:\Users\Saad\Desktop\codin\WE_LABS\All Labs\LAB4\obj\Debug\net7.0\LAB4.genruntimeconfig.cache
+C:\Users\Saad\Desktop\codin\WE_LABS\All Labs\LAB4\obj\Debug\net7.0\ref\LAB4.dll

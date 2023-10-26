@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        h1 {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            margin-left: 20px;
+        }
+
+        img {
+            border: 2px solid #333;
+            border-radius: 5px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 20px auto;
+            background-color: #fff;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #333;
+            color: #fff;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        div {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Background images for sections */
+        body {
+            background-image: url('grad.jpg');
+            background-size: cover;
+        }
+
+        #introduction {
+            background-image: url('introduction_background.jpg');
+            background-size: cover;
+            color: #fff;
+        }
+
+        #courses {
+            background-image: url('courses_background.jpg');
+            background-size: cover;
+        }
+
+        #interests {
+            background-image: url('interests_background.jpg');
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <h1>Student Profile</h1>
+    
+    <div id="introduction">
+        <p>
+            <img src="saad.jpg" alt="Student Image" width="150">
+            I am Saad Ather Ali, and I'm the only child in my family. 
+            Currently, I'm on a path to complete my degree in software 
+            engineering. My journey in the world of technology has been 
+            an exciting one, filled with challenges and opportunities for growth.
+        </p>
+    </div>
+
+    <div id="courses">
+        <h2>Courses Taken</h2>
+        <table border="1">
+            <tr>
+                <th>Course Id</th>
+                <th>Course Name</th>
+                <th>Credit Hours</th>
+                <th>Year Taken</th>
+            </tr>
+            <tr>
+                <td>101</td>
+                <td>Introduction to Computer Science</td>
+                <td>3</td>
+                <td>2022</td>
+            </tr>
+            <tr>
+                <td>201</td>
+                <td>Data Structures and Algorithms</td>
+                <td>4</td>
+                <td>2023</td>
+            </tr>
+            <tr>
+                <td>301</td>
+                <td>Web Development</td>
+                <td>3</td>
+                <td>2022</td>
+            </tr>
+            <tr>
+                <td>401</td>
+                <td>Database Management</td>
+                <td>3</td>
+                <td>2023</td>
+            </tr>
+        </table>
+
+        <div>
+            <button onclick="searchAndHighlight()">Search and Highlight Course</button>
+            <button onclick="addNewCourse()">Add New Course</button>
+            <button onclick="updateCourse()">Update Course</button>
+            <button onclick="removeCourse()">Remove Course</button>
+        </div>
+    </div>
+
+    <div id="interests">
+        <h2>Interests</h2>
+        <p>
+            Check out my university's homepage: <a href="https://www.uit.edu">UIT University</a>
+        </p>
+    </div>
+
+    <script>
+        function searchAndHighlight() {
+            var courseToSearch = prompt("Enter Course Name to Search");
+            // Implement course search and highlight logic here
+        }
+
+        function addNewCourse() {
+            // Implement logic to add a new course to the table
+        }
+
+        function updateCourse() {
+            // Implement logic to update an existing course in the table
+        }
+
+        function removeCourse() {
+            // Implement logic to remove a course from the table
+        }
+    </script>
+</body>
+</html>
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        #heading {
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+            box-shadow: 0 0 10px rgba(150, 150, 150, 0.293);
+            padding: 10px;
+        }
+
+        h2 {
+            color: #333;
+            text-align: center;
+            text-size-adjust: 50px;
+        }
+
+        p {
+            text-align: justify;
+            text-justify: inter-word;
+        }
+
+        body {
+            background-image: url('grad.jpg');
+            background-size: cover;
+        }
+
+        #introduction {
+            background-image: url('introduction_background.jpg');
+            background-size: cover;
+            color: #fff;
+        }
+
+        #main_D {
+            width: auto;
+        }
+
+        #left_D {
+            width: 50%;
+            display: table-cell;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+            box-shadow: 0 0 10px rgba(150, 150, 150, 0.293);
+            text-align: center;
+            height: 100%;
+        }
+
+        #right_D {
+            width: 50%;
+            margin-top: 0;
+            display: table-cell;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+            box-shadow: 0 0 10px rgba(150, 150, 150, 0.293);
+            height: 100%;
+        }
+
+        #about_me {
+            text-align: center;
+            margin: auto;
+        }
+
+        #pic_me {
+            max-width: auto;
+            max-height: auto;
+            margin-left: 50px;
+            margin-right: 50px;
+            height: 500px;
+            width: 500px;
+            float: left;
+        }
+
+        #intro{
+            max-width: auto;
+            max-height: auto;
+            margin-left: 50px;
+            margin-right: 50px;
+            height: 500px;
+            width: 500px;
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="heading">Student Profile</h1>
+
+    <section>
+    <img src="saad.jpg" id="pic_me" >
+</section>
+    
+<section id="intro">
+    <h2> ABOUT ME </h2>
+    <p>
+        I am Saad Ather Ali, the sole child in my family, currently pursuing a software engineering degree.
+        This journey has been both thrilling and challenging, exposing me to a rapidly evolving world of
+        technology. I've honed my skills in programming, software development, and embraced the dynamic
+        landscape of the tech industry. My family's unwavering support has been a cornerstone of my journey.
+        As I approach degree completion, I'm excited to apply my knowledge to make a meaningful impact. I'm
+        deeply committed to staying adaptable and continuously learning, ready to embrace emerging
+        technologies and contribute to the ever-transforming software engineering field.
+    </p>
+
+    <!-- <div id="main_D" style="display: table-row; height: 100px;">
+        <div id="left_D">
+            <img src="saad.jpg" alt="Student Image" id="pic_me" >
+        </div>
+        <div id="right_D">
+            <h1 id="about_me"> ABOUT ME</h1>
+            <p>
+                I am Saad Ather Ali, the sole child in my family, currently pursuing a software engineering degree.
+                This journey has been both thrilling and challenging, exposing me to a rapidly evolving world of
+                technology. I've honed my skills in programming, software development, and embraced the dynamic
+                landscape of the tech industry. My family's unwavering support has been a cornerstone of my journey.
+                As I approach degree completion, I'm excited to apply my knowledge to make a meaningful impact. I'm
+                deeply committed to staying adaptable and continuously learning, ready to embrace emerging
+                technologies and contribute to the ever-transforming software engineering field.
+            </p>
+        </div>
+    </div> -->
+
+</body>
+
+</html>

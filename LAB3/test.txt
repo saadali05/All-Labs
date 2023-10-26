@@ -1,0 +1,144 @@
+ <!DOCTYPE html>
+<html lang='en'>
+
+<head>
+	<meta charset="utf-8">
+
+	<title>
+		LAB 3 HOME TASK
+	</title>
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		body {
+			margin: 2%;
+			justify-content: center;
+			overflow: hidden;
+			background-color: black;
+		}
+
+		.box-wrapper {
+			color: white;
+			height: 95vh;
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+		}
+
+		#box3 {
+			padding: 10px;
+			color: white;
+			flex-grow: 1;
+			display: flex;
+			flex-direction: row;
+			border: solid 1px white
+		}
+
+		#box4 {
+			flex-grow: 2;
+			color: white;
+			border: solid 1px white;
+		}
+
+		.middle-column {
+			flex-grow: 1;
+			color: white;
+			display: flex;
+			flex-direction: column;
+		}
+
+		.middle-column div {
+			color: white;
+			flex-grow: 1;
+			margin: 0 5px;
+			border: solid 1px white;
+		}
+
+		.middle-column div+div {
+			margin-top: 8px
+		}
+
+		#box8 {
+			color: white;
+			flex-grow: 1;
+			border: solid 1px white
+		}
+
+		#box4_pic {
+			margin-top: 50px;
+			width: 250px;
+			height: 250px;
+		}
+
+		#box_pic {
+			margin-top: 50px;
+			width: 100px;
+			height: 100px;
+		}
+
+		h2 {
+			margin-top: 50px;
+			text-align: center;
+			font-family: 'Oswald', sans-serif;
+		}
+
+		#head4 {
+			margin-top: 50px;
+			font-size: 50px;
+			text-align: center;
+			font-family: 'Oswald', sans-serif;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="box-wrapper">
+		<div id="box3">
+			<div id="box4">
+				<img id="box4_pic" src="sun.png">
+				<h2 id="head4"> KARACHI </h2>
+			</div>
+			<div class="middle-column">
+				<div id="box5">
+					<img id="box_pic" src="rain.png">
+					<h2> LAHORE </h2>
+				</div>
+				<div id="box7">
+					<img id="box_pic" src="snowfall.png">
+					<h2> FAISALABAD </h2>
+				</div>
+			</div>
+
+			<div class="middle-column">
+				<div id="box5">
+					<img id="box_pic" src="snowfall.png">
+					<h2> RAWALPINDI </h2>
+				</div>
+
+				<div id="box7">
+					<img id="box_pic" src="rain.png">
+					<h2> GUJRANWALA </h2>
+				</div>
+			</div>
+
+			<div class="middle-column">
+				<div id="box5">
+					<img id="box_pic" src="sun.png">
+					<h2> PESHAWAR </h2>
+				</div>
+				<div id="box7">
+					<img id="box_pic" src="cloudy.png">
+					<h2> MULTAN </h2>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html> 
