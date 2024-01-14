@@ -1,0 +1,21 @@
+/* src/Header.css */
+header {
+  background-color: #333;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+nav li {
+  display: inline;
+  margin: 100px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}

@@ -1,0 +1,17 @@
+/* src/Counter.css */
+.counter {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .button-container {
+    margin-top: 10px;
+  }
+  
+  button {
+    margin: 5px;
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
