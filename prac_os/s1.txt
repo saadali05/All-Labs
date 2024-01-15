@@ -1,0 +1,31 @@
+Chal nikal bc
+
+
+from multiprocessing import Array, Process
+import random
+
+def child_pro(num):
+    for i in num:
+        result = i**2
+
+
+if __name__== "__main__":
+    number = []
+    for i in range(11):
+        num = random.randint(0,10)
+        number.append(num)
+    ar_num1 = number[0:4]
+    ar_num2 = number[5:10]
+    num_send1 = Array('i',ar_num1)
+    num_send2 = Array('i',ar_num2)
+    for i in ar_num1:
+        p1 = Process(target=child_pro,args=(i))
+        p1.start()
+        p1.join()
+    for i in ar_num2:
+        p2 = Process(target=child_pro,args=(i))
+        p2.start()
+        p2.join()
+
+
+lab 12 ka code
