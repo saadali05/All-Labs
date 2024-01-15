@@ -1,4 +1,3 @@
-// Login.js
 import React, { useState } from 'react';
 
 const Login = () => {
@@ -36,10 +35,16 @@ const Login = () => {
     cursor: 'pointer',
   };
 
+  const formStyle = {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+  };
+
   return (
     <div style={loginStyle}>
       <h2>Login</h2>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} style={formStyle}>
         <input
           type="text"
           placeholder="Username"
