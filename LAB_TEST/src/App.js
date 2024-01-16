@@ -31,3 +31,30 @@ const App = () => {
 };
 
 export default App;
+
+
+// import React from 'react';
+// import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
+// import { Navbar, Nav } from 'react-bootstrap';
+
+// function App() {
+//   return (
+//     <div className="App">
+//       <Navbar bg="dark" variant="dark" expand="lg">
+//         <Navbar.Brand href="#home">Your University</Navbar.Brand>
+//         <Navbar.Toggle aria-controls="basic-navbar-nav" />
+//         <Navbar.Collapse id="basic-navbar-nav">
+//           <Nav className="ml-auto">
+//             <Nav.Link href="#home">Home</Nav.Link>
+//             <Nav.Link href="#features">Features</Nav.Link>
+//             <Nav.Link href="#login">Login</Nav.Link>
+//           </Nav>
+//         </Navbar.Collapse>
+//       </Navbar>
+
+//       {/* Your content goes here */}
+//     </div>
+//   );
+// }
+
+// export default App;
