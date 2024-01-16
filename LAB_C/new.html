@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Job Application Form</title>
+  <style>
+    /* CSS styles go here */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+    
+    h1 {
+      color: #333;
+    }
+    
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      cursor: pointer;
+    }
+    
+    /* Add more styles as needed */
+  </style>
+  <script>
+    // JavaScript code goes here
+    // You can add form validation, AJAX submission, etc.
+    // Get user inputs
+const name = document.getElementById('name').value;
+const email = document.getElementById('email').value;
+const number = document.getElementById('number').value;
+
+// Regular expressions for validation
+const numberRegex = /^\d+$/;
+const uppercaseRegex = /^[A-Z]+$/;
+const wordInNumberRegex = /[a-zA-Z]/;
+
+// Validate name
+if (numberRegex.test(name)) {
+  console.log("Number entered in name field");
+}
+
+// Validate email
+if (uppercaseRegex.test(email)) {
+  console.log("Uppercase letter entered in email field");
+}
+
+// Validate number
+if (wordInNumberRegex.test(number)) {
+  console.log("Word entered in number field");
+}
+
+  </script>
+</head>
+<body>
+  <h1>Job Application Form</h1>
+  
+  <form action="submit_job_application.php" method="post">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" required><br>
+    
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br>
+    
+    <label for="phone">Phone:</label><br>
+    <input type="tel" id="phone" name="phone" required><br>
+    
+    <label for="resume">Upload Resume:</label><br>
+    <input type="file" id="resume" name="resume" required><br>
+    
+    <label for="cover-letter">Cover Letter:</label><br>
+    <textarea id="cover-letter" name="cover-letter" rows="4" required></textarea><br>
+    
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
